@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pôle Formation - SOLUTIONS INFORMATIQUE ET TÉLÉCOMS</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 80px;
+            background-color: #f8fafc;
+            color: #0f172a;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: 70px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+            z-index: 1000;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: bold;
+            font-size: 1rem;
+            color: #0f172a;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .logo-img { height: 40px; width: auto; }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0; padding: 0;
+            gap: 20px;
+            align-items: center;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #334155;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        .nav-links a:hover, .nav-links a.active { color: #2563eb; font-weight: bold; }
+        .btn-nav {
+            background-color: #2563eb;
+            color: white !important;
+            padding: 8px 16px;
+            border-radius: 5px;
+        }
+
+        /* Header Page */
+        header {
+            background-color: #0f172a;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        header h1 { margin: 0 0 10px 0; }
+        header p { color: #94a3b8; max-width: 650px; margin: 0 auto; }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Section Paiement Mobile Money */
+        .payment-box {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 35px;
+            border-left: 5px solid #16a34a;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .payment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .payment-card-mtn {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #ffcc00;
+        }
+        .payment-card-orange {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #ff6600;
+        }
+
+        /* Fiche de Formation */
+        .course-card {
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            border-left: 5px solid #2563eb;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .badge {
+            display: inline-block;
+            background: #eff6ff;
+            color: #2563eb;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .course-card h2 {
+            margin: 0 0 15px 0;
+            color: #1e3a8a;
+            font-size: 1.3rem;
+        }
+        .course-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            font-size: 0.9rem;
+        }
+        .course-details div b {
+            display: block;
+            color: #0f172a;
+        }
+        .program-list {
+            margin: 15px 0;
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+        .action-btns {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            background-color: #2563eb;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-outline {
+            background-color: transparent;
+            color: #2563eb;
+            border: 1px solid #2563eb;
+        }
+
+        /* Formulaire d'inscription */
+        .register-box {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            margin-top: 50px;
+        }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%; padding: 10px;
+            border: 1px solid #cbd5e1; border-radius: 4px;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barre de Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo-img" onerror="this.style.display='none'">
+            <span>SOLUTIONS INFORMATIQUE ET TÉLÉCOMS</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="telecom.html">Télécoms</a></li>
+            <li><a href="informatique.html">Informatique</a></li>
+            <li><a href="infographie.html">Infographie & IA</a></li>
+            <li><a href="formation.html" class="active">Formation</a></li>
+            <li><a href="#inscription" class="btn-nav">S'inscrire</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Pôle Formation & Renforcement de Capacités</h1>
+        <p>Formations certifiantes et 100% pratiques animées par des experts du secteur Télécom, Bureautique, Informatique et Design.</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Section Moyens de Paiement Mobile Money -->
+        <div class="payment-box">
+            <h3 style="color: #1e3a8a; margin-top: 0;">💳 Modalités de Paiement (Mobile Money)</h3>
+            <p>Réglez vos frais d'inscription ou de formation en toute sécurité via nos comptes officiels :</p>
+            
+            <div class="payment-grid">
+                <!-- MTN Momo -->
+                <div class="payment-card-mtn">
+                    <b>MTN Mobile Money</b>
+                    <p style="margin: 5px 0 0 0; font-size: 0.9rem; color: #475569;">
+                        Numéro : <strong>[Insérer votre N° MTN]</strong><br>
+                        Nom : <strong>Solutions Informatique & Télécoms</strong>
+                    </p>
+                </div>
+                <!-- Orange Money -->
+                <div class="payment-card-orange">
+                    <b>Orange Money</b>
+                    <p style="margin: 5px 0 0 0; font-size: 0.9rem; color: #475569;">
+                        Numéro : <strong>[Insérer votre N° Orange]</strong><br>
+                        Nom : <strong>Solutions Informatique & Télécoms</strong>
+                    </p>
+                </div>
+            </div>
+            <p style="font-size: 0.85rem; color: #64748b; margin-top: 15px; margin-bottom: 0;">
+                💡 <em>Pensez à bien conserver votre SMS de confirmation ou l'ID de transaction pour le renseigner dans le formulaire ci-dessous.</em>
+            </p>
+        </div>
+
+        <h2>Catalogue Complet des Formations</h2>
+
+        <!-- Module 1: Secrétariat & Bureautique -->
+        <div class="course-card">
+            <span class="badge">Bureautique & Secrétariat</span>
+            <h2>Secrétariat Bureautique & Maîtrise de la Suite Microsoft Office</h2>
+            <p>Maîtrisez les outils indispensables de rédaction, de calcul, de présentation et d'organisation administrative d'entreprise.</p>
+
+            <div class="course-details">
+                <div><b>Durée :</b> 3 semaines (45 heures)</div>
+                <div><b>Niveau / Prérequis :</b> Débutant (Aucun prérequis)</div>
+                <div><b>Format :</b> Présentiel / En ligne</div>
+                <div><b>Certificat :</b> Attestation de qualification bureautique</div>
+            </div>
+
+            <h3>Programme de la formation :</h3>
+            <ul class="program-list">
+                <li><b>Word :</b> Mise en page de courriers professionnels, rapports, courriers types et publipostage.</li>
+                <li><b>Excel :</b> Saisie de données, formules de calcul, gestion de tableaux de bord et graphiques.</li>
+                <li><b>PowerPoint :</b> Conception de présentations professionnelles et supports d'exposés/réunions.</li>
+                <li><b>Outils Collaboratifs & Secrétariat :</b> Gestion des e-mails (Outlook), classement de documents et rédaction administrative.</li>
+            </ul>
+
+            <div class="action-btns">
+                <a href="#inscription" class="btn" onclick="selectCourse('Secrétariat Bureautique')">Pré-inscrire à cette session</a>
+                <a href="bureautique.pdf" class="btn btn-outline" target="_blank">📄 Fiche Programme (PDF)</a>
+            </div>
+        </div>
+
+        <!-- Module 2: Fibre Optique -->
+        <div class="course-card">
+            <span class="badge">Télécommunications</span>
+            <h2>Installation, Soudure & Recette de Fibre Optique (FTTH/LAN)</h2>
+            <p>Apprenez à installer, raccorder et tester des liaisons en fibre optique pour les réseaux télécoms et d'entreprises.</p>
+
+            <div class="course-details">
+                <div><b>Durée :</b> 2 semaines (40 heures)</div>
+                <div><b>Niveau / Prérequis :</b> Débutant à Intermédiaire</div>
+                <div><b>Format :</b> Présentiel (Atelier pratique)</div>
+                <div><b>Certificat :</b> Attestation de qualification</div>
+            </div>
+
+            <h3>Programme de la formation :</h3>
+            <ul class="program-list">
+                <li>Principes fondamentaux de la très haute vitesse et types de fibres.</li>
+                <li>Préparation des câbles, dénudage et clivage de précision.</li>
+                <li>Utilisation de la soudeuse par réflexion / fusion.</li>
+                <li>Raccordement des boîtiers d'étage et prise terminale optique (PTO).</li>
+                <li>Mesures et réflectométrie (OTDR) pour détection de pannes.</li>
+            </ul>
+
+            <div class="action-btns">
+                <a href="#inscription" class="btn" onclick="selectCourse('Fibre Optique')">Pré-inscrire à cette session</a>
+                <a href="fibre.pdf" class="btn btn-outline" target="_blank">📄 Fiche Programme (PDF)</a>
+            </div>
+        </div>
+
+        <!-- Module 3: Réseaux & Cybersécurité -->
+        <div class="course-card">
+            <span class="badge">Informatique & Réseaux</span>
+            <h2>Administration Réseaux CISCO & Cybersécurité de Base</h2>
+            <p>Concevez, sécurisez et administrez le réseau informatique d'une PME ou d'une grande structure.</p>
+
+            <div class="course-details">
+                <div><b>Durée :</b> 4 semaines (60 heures)</div>
+                <div><b>Niveau / Prérequis :</b> Bases en informatique requises</div>
+                <div><b>Format :</b> Présentiel ou En ligne</div>
+                <div><b>Certificat :</b> Certificat de fin de module</div>
+            </div>
+
+            <h3>Programme de la formation :</h3>
+            <ul class="program-list">
+                <li>Configuration de Switchs et Routeurs (VLANs, Routage IP).</li>
+                <li>Mise en place de pare-feu (Firewall) et politiques d'accès.</li>
+                <li>Sécurisation des accès Wi-Fi professionnels et VPN.</li>
+                <li>Diagnostic de pannes réseau et outils de monitoring.</li>
+            </ul>
+
+            <div class="action-btns">
+                <a href="#inscription" class="btn" onclick="selectCourse('Administration Réseaux')">Pré-inscrire à cette session</a>
+                <a href="reseaux.pdf" class="btn btn-outline" target="_blank">📄 Fiche Programme (PDF)</a>
+            </div>
+        </div>
+
+        <!-- Module 4: Infographie & Design Visuel avec IA -->
+        <div class="course-card">
+            <span class="badge">Infographie & IA</span>
+            <h2>Infographie & Création Visuelle assistée par IA</h2>
+            <p>Apprenez à concevoir des visuels professionnels et impactants en combinant la puissance de Photoshop et des outils d'Intelligence Artificielle générative.</p>
+
+            <div class="course-details">
+                <div><b>Durée :</b> 3 semaines (45 heures)</div>
+                <div><b>Niveau / Prérequis :</b> Débutant à Intermédiaire</div>
+                <div><b>Format :</b> Présentiel / En ligne</div>
+                <div><b>Certificat :</b> Attestation de qualification</div>
+            </div>
+
+            <h3>Programme de la formation :</h3>
+            <ul class="program-list">
+                <li><b>Bases du Design Visuel :</b> Harmonie des couleurs, typographie et composition d'affiches/flyers.</li>
+                <li><b>Maîtrise de Photoshop :</b> Retouche d'image, montage, détourage et création de supports publicitaires.</li>
+                <li><b>Génération d'images par IA :</b> Prompt engineering (Midjourney, DALL-E, Adobe Firefly) pour créer des visuels sur-mesure.</li>
+                <li><b>Workflow Hybride :</b> Intégration des créations IA dans Photoshop pour des finitions professionnelles.</li>
+                <li><b>Création pour les Réseaux Sociaux :</b> Bannières, visuels de couverture et supports marketing.</li>
+            </ul>
+
+            <div class="action-btns">
+                <a href="#inscription" class="btn" onclick="selectCourse('Infographie & IA')">Pré-inscrire à cette session</a>
+                <a href="infographie.pdf" class="btn btn-outline" target="_blank">📄 Fiche Programme (PDF)</a>
+            </div>
+        </div>
+
+        <!-- Formulaire de Pré-inscription -->
+        <div class="register-box" id="inscription">
+            <h2>Formulaire de Pré-Inscription</h2>
+            <p>Sélectionnez votre formation, indiquez votre référence de paiement et remplissez vos informations pour valider votre place.</p>
+            
+            <form action="https://formspree.io/f/xwleyjqv" method="POST">
+                <!-- Redirection automatique vers la page merci.html après soumission -->
+                <input type="hidden" name="_next" value="merci.html">
+
+                <div class="form-group">
+                    <label>Nom complet</label>
+                    <input type="text" name="nom" placeholder="Ex: Jean Dupont" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Adresse E-mail</label>
+                    <input type="email" name="email" placeholder="votre.email@exemple.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Numéro de Téléphone (WhatsApp)</label>
+                    <input type="tel" name="telephone" placeholder="+237 ..." required>
+                </div>
+
+                <div class="form-group">
+                    <label>Formation souhaitée</label>
+                    <select id="courseSelect" name="formation">
+                        <option value="Secrétariat Bureautique">Secrétariat Bureautique & Suite MS Office</option>
+                        <option value="Fibre Optique">Fibre Optique (FTTH/LAN)</option>
+                        <option value="Administration Réseaux">Administration Réseaux CISCO & Cybersécurité</option>
+                        <option value="Infographie & IA">Infographie & Création Visuelle assistée par IA</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Mode de formation préféré</label>
+                    <select name="mode">
+                        <option value="Présentiel">Présentiel (En atelier)</option>
+                        <option value="En Ligne">En Ligne (E-learning)</option>
+                        <option value="Sur-mesure">Sur-mesure (Pour mon entreprise)</option>
+                    </select>
+                </div>
+
+                <!-- Champ pour la référence Mobile Money -->
+                <div class="form-group">
+                    <label>Référence / ID de Transaction Mobile Money</label>
+                    <input type="text" name="reference_paiement" placeholder="Ex: ID de transaction ou numéro de l'expéditeur">
+                </div>
+
+                <div class="form-group">
+                    <label>Remarques / Questions</label>
+                    <textarea name="message" rows="3" placeholder="Avez-vous des attentes particulières ?"></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Valider ma pré-inscription</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 SOLUTIONS INFORMATIQUE ET TÉLÉCOMS — Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function selectCourse(courseName) {
+            var select = document.getElementById('courseSelect');
+            for(var i = 0; i < select.options.length; i++) {
+                if(select.options[i].value === courseName) {
+                    select.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
