@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique SIT | Matériel & Accessoires</title>
+    <style>
+        /* Base et Typographie */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 0; scroll-behavior: smooth; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+        /* Barre de navigation centrée moderne */
+        .shop-nav { 
+            display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; 
+            background: #fff; padding: 15px 25px; border-radius: 50px; 
+            margin: 30px auto; box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            max-width: 900px; border: 1px solid #e2e8f0;
+        }
+        .shop-nav a { 
+            text-decoration: none; color: #475569; font-weight: 600; 
+            padding: 8px 16px; border-radius: 25px; transition: 0.3s;
+        }
+        .shop-nav a:hover { background: #2563eb; color: white; }
+
+        /* Style des Cartes Produits */
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 25px; margin-top: 20px; }
+        .card { 
+            background: white; border-radius: 12px; padding: 20px; transition: 0.3s; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 1px solid #eee; text-align: center;
+        }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 12px 20px rgba(0,0,0,0.15); }
+        .card img { width: 100%; height: 160px; object-fit: contain; margin-bottom: 15px; }
+        
+        /* Bouton Commander */
+        .btn-buy { 
+            display: block; background: #ff9900; color: white; padding: 12px; 
+            border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 15px; transition: 0.3s;
+        }
+        .btn-buy:hover { background: #e68a00; }
+        
+        .price { font-size: 1.3rem; font-weight: bold; color: #d9534f; margin: 10px 0; }
+        .badge { background: #2563eb; color: white; padding: 3px 8px; font-size: 0.7rem; border-radius: 4px; display: inline-block; margin-bottom: 8px; }
+        .category-title { color: #1e3a8a; border-left: 5px solid #2563eb; padding-left: 15px; margin: 60px 0 30px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Barre de navigation -->
+    <nav class="shop-nav">
+        <a href="#vetements">Vêtements</a>
+        <a href="#acc-tel">Accessoires Téléphone</a>
+        <a href="#acc-pc">Accessoires PC</a>
+        <a href="#ordinateurs">Ordinateurs</a>
+        <a href="#telecoms">Télécoms</a>
+        <a href="index.html" style="color: #d9534f;">← Retour</a>
+    </nav>
+
+    <h1 style="text-align: center;">Notre Sélection de Produits</h1>
+
+    <!-- Exemple de Rubrique (À répéter pour les 5 catégories) -->
+    <h2 id="VETEMENTS" class="category-title">VETEMENTS</h2>
+    <div class="grid">
+        <!-- Répétez ce bloc 7 fois par catégorie -->
+         <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+        <div class="card">
+            <span class="badge">Best Seller</span>
+            <img src="vetement-1.jpg" alt="Produit">
+            <h3>T-Shirt Technique</h3>
+            <p>Confortable et résistant pour vos interventions.</p>
+            <div class="price">19,99 €</div>
+            <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+        </div>
+        <!-- Ajoutez ici les 6 autres produits de cette catégorie -->
+    </div>
+    <h2 id="ACCESSOIRES POUR TELEPHONE" class="category-title">ACCESSOIRES POUR TELEPHONE</h2>
+        <div class="grid">
+        <!-- Répétez ce bloc 7 fois par catégorie -->
+         <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+        <div class="card">
+            <span class="badge">Best Seller</span>
+            <img src="vetement-1.jpg" alt="Produit">
+            <h3>T-Shirt Technique</h3>
+            <p>Confortable et résistant pour vos interventions.</p>
+            <div class="price">19,99 €</div>
+            <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+        </div>
+        <!-- Ajoutez ici les 6 autres produits de cette catégorie -->
+    </div>
+
+    <h2 id="ACCESSOIRES PC" class="category-title">ACCESSOIRES PC</h2>
+        <div class="grid">
+        <!-- Répétez ce bloc 7 fois par catégorie -->
+         <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+        <div class="card">
+            <span class="badge">Best Seller</span>
+            <img src="vetement-1.jpg" alt="Produit">
+            <h3>T-Shirt Technique</h3>
+            <p>Confortable et résistant pour vos interventions.</p>
+            <div class="price">19,99 €</div>
+            <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+        </div>
+        <!-- Ajoutez ici les 6 autres produits de cette catégorie -->
+    </div>
+    
+    <h2 id="ORDINATEURS" class="category-title">ORDINATEURS</h2>
+        <div class="grid">
+        <!-- Répétez ce bloc 7 fois par catégorie -->
+         <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+        <div class="card">
+            <span class="badge">Best Seller</span>
+            <img src="vetement-1.jpg" alt="Produit">
+            <h3>T-Shirt Technique</h3>
+            <p>Confortable et résistant pour vos interventions.</p>
+            <div class="price">19,99 €</div>
+            <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+        </div>
+        <!-- Ajoutez ici les 6 autres produits de cette catégorie -->
+    </div>    
+    <!-- Poursuivez avec les autres catégories (acc-tel, acc-pc, ordinateurs, telecoms) -->
+    <!-- Utilisez le même modèle de "card" ci-dessus pour chaque produit -->
+</div>
+
+<h2 id="TELECOMS" class="category-title">TELECOMS</h2>
+        <div class="grid">
+        <!-- Répétez ce bloc 7 fois par catégorie -->
+         <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+ <!-- DÉBUT DU MODÈLE DE PRODUIT -->
+<div class="card">
+    <span class="badge">Nouveauté</span>
+    <!-- 1. Remplacez "image.jpg" par le nom de votre fichier image -->
+    <img src="image.jpg" alt="Nom du produit">
+    
+    <!-- 2. Remplacez le nom du produit -->
+    <h3>Nom du Produit</h3>
+    
+    <!-- 3. Remplacez la description courte (1 phrase max) -->
+    <p style="font-size: 0.9rem; color: #666;">Description courte du produit et son bénéfice principal.</p>
+    
+    <!-- Prix -->
+    <div class="price">0,00 €</div>
+    
+    <!-- 4. Remplacez "LIEN_AMAZON" par votre lien d'affiliation -->
+    <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+</div>
+<!-- FIN DU MODÈLE DE PRODUIT -->
+        <div class="card">
+            <span class="badge">Best Seller</span>
+            <img src="vetement-1.jpg" alt="Produit">
+            <h3>T-Shirt Technique</h3>
+            <p>Confortable et résistant pour vos interventions.</p>
+            <div class="price">19,99 €</div>
+            <a href="LIEN_AMAZON" target="_blank" class="btn-buy">Commander sur Amazon</a>
+        </div>
+        <!-- Ajoutez ici les 6 autres produits de cette catégorie -->
+    </div>    
+    <!-- Poursuivez avec les autres catégories (acc-tel, acc-pc, ordinateurs, telecoms) -->
+    <!-- Utilisez le même modèle de "card" ci-dessus pour chaque produit -->
+</div>
+</body>
+</html>
